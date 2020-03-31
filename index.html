@@ -20,9 +20,6 @@
 
 <body>
     <header>
-        <p>World population is <span id="world-population">0</span></p>
-        <p> <span id="world">0</span></p>
-
         <div class="container-fluid p-O">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">
@@ -75,7 +72,7 @@
                     <button class="btn btn-light px-5 py-2">By Now for $5.99</button>
                 </div>
                 <div class="col-md-5 col-ms-12 h-25">
-                    <img src="../images/header-img.png" alt="Books">
+                    <img src="images/header-img.png" alt="Books">
                 </div>
             </div>
         </div>
@@ -120,19 +117,20 @@
             <div class="container-fluid text-center">
                 <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
                     <div class="rect">
-                        <h1 class="counter">2345</h1>
+                        <h1 id="world-population">0</h1>
+
                         <p>Happy Client</p>
                     </div>
                     <div class="rect">
-                        <h1 class="counter">6784</h1>
+                        <h1 id="world-1">0</h1>
                         <p>Cups Coffre</p>
                     </div>
                     <div class="rect">
-                        <h1 class="counter">1056</h1>
+                        <h1 id="world-2">0</h1>
                         <p>Tickets Submitted</p>
                     </div>
                     <div class="rect">
-                        <h1 class="counter">9152</h1>
+                        <h1 id="world-3">0</h1>
                         <p>Total Project</p>
                     </div>
                 </div>
@@ -247,7 +245,7 @@
                 <div class="col-md-4 col-12 text-center">
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                            <img src="../images/UI-face-3.jpg" alt="Member" class="img-fluid border-radius p-4">
+                            <img src="images/UI-face-3.jpg" alt="Member" class="img-fluid border-radius p-4">
                         </div>
                         <div class="card-body">
                             <h3 class="card-tittle">Blalock Jolene</h3>
@@ -269,7 +267,7 @@
                                 <!-- card 2 -->
                                 <div class="card mr-2 d-inline-block shadow-lg">
                                     <div class="card-img-top">
-                                        <img src="../images/UI-face-1.jpg" alt="Member"
+                                        <img src="images/UI-face-1.jpg" alt="Member"
                                             class="img-fluid rounded-circle w-50 p-4">
                                     </div>
                                     <div class="card-body">
@@ -289,7 +287,7 @@
                                 <!-- card 3 -->
                                 <div class="card mr-2 d-inline-block shadow-lg">
                                     <div class="card-img-top">
-                                        <img src="../images/UI-face-2.jpg" alt="Member"
+                                        <img src="images/UI-face-2.jpg" alt="Member"
                                             class="img-fluid rounded-circle w-50 p-4">
                                     </div>
                                     <div class="card-body">
@@ -311,7 +309,7 @@
                     <!-- card 4 -->
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                            <img src="../images/UI-face-4.jpg" alt="Member" class="img-fluid border-radius p-4">
+                            <img src="images/UI-face-4.jpg" alt="Member" class="img-fluid border-radius p-4">
                         </div>
                         <div class="card-body">
                             <h3 class="card-tittle">Olivia Louis</h3>
@@ -332,10 +330,11 @@
             <div class="row text-left">
                 <div class="col-md-5 col-md-5">
                     <h1 class="text-light">About US</h1>
-                    <p class="text-muted">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
+                    <p class="text-muted">Name:<span>Abdallah Khaled</span></p>
+<p class="text-muted">Nationality:<span>Egyptian</span></p>
+<p class="text-muted">Phone:<span>+201026326246</span></p>
+<p class="text-muted">Email:<span>abdallahkhaledlotfy@gmail</span></p>
+                    
                     <p class="pt-4 text-muted">
                         Copyright ©2019 All rights reserved | This template is made with by
                         <span>Abdallah Khaled</span>
@@ -389,11 +388,7 @@
     <script src="js/jquery.animateNumber.min.js"></script>
 
 
-    <!-- start counter -->
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <!-- end counter -->
+   
     <script src="js/main.js"></script>
 
 </body>

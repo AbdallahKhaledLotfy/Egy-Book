@@ -13,21 +13,55 @@ $(".top").click(function () {
 });
 
 
-jQuery(document).ready(function ($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1500
-    });
-});
+
 
 
 
 
 var comma_separator_number_step = $.animateNumber.numberStepFactories.separator()
-$('#world-population').animateNumber({
-    number: 2345,
-});
+$('#world-population').animateNumber(
+  {
+    number:2345,
+  },
+  {
+    easing: 'swing',
+    duration: 1500,        
+
+  }
+);
+
 var comma_separator_number_step = $.animateNumber.numberStepFactories.separator()
-$('#world').animateNumber({
-    number: 6000,
-});
+$('#world-1').animateNumber(
+  {
+    number: 6784,
+  },
+  {
+    easing: 'swing',
+    duration: 1500,        
+
+  }
+);
+
+var comma_separator_number_step = $.animateNumber.numberStepFactories.separator()
+$('#world-2').animateNumber(
+  {
+    number: 1056,
+  },
+  {
+    easing: 'swing',
+    duration: 1500,        
+
+  }
+);
+
+var comma_separator_number_step = $.animateNumber.numberStepFactories.separator()
+$('#world-3').animateNumber(
+  {
+    number: 9152,
+  },
+  {
+    easing: 'swing',
+    duration: 1500,        
+
+  }
+);
