@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>books (Joseph Conrad is a  writer)</title>
+    <title>books (Joseph Conrad is a English writer)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href=".//css/style.css">
-    <link rel="stylesheet" href="./css/mobile-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
+
 
 
 
@@ -19,6 +20,8 @@
 
 <body>
     <header>
+        <p>World population is <span id="world-population">0</span></p>
+        <p> <span id="world">0</span></p>
 
         <div class="container-fluid p-O">
             <nav class="navbar navbar-expand-lg">
@@ -33,7 +36,7 @@
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class=" nav-link" href=".//src/index.html">Home <span
+                            <a class=" nav-link" href="..//src/index.html">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -42,6 +45,15 @@
                         <li class="nav-item">
                             <a class=" nav-link" href="#price">price</a>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link">Pages</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Generic</a>
+                                    <a href="#">Element</a>
+                                </div>
+                            </div>
+                        </li> -->
                         <li class="nav-item">
                             <a class=" nav-link" href="#Client">Client</a>
                         </li>
@@ -63,7 +75,7 @@
                     <button class="btn btn-light px-5 py-2">By Now for $5.99</button>
                 </div>
                 <div class="col-md-5 col-ms-12 h-25">
-                    <img src="./images/header-img.png" alt="Books">
+                    <img src="../images/header-img.png" alt="Books">
                 </div>
             </div>
         </div>
@@ -74,7 +86,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="pray">
-                            <img src="./images/Joseph_Conrad.png" alt="pray">
+                            <img src="images/Joseph_Conrad.png" alt="pray">
                         </div>
                     </div>
                     <div class="col-md-6 " id="About">
@@ -235,7 +247,7 @@
                 <div class="col-md-4 col-12 text-center">
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                            <img src="./images/UI-face-3.jpg" alt="Member" class="img-fluid border-radius p-4">
+                            <img src="../images/UI-face-3.jpg" alt="Member" class="img-fluid border-radius p-4">
                         </div>
                         <div class="card-body">
                             <h3 class="card-tittle">Blalock Jolene</h3>
@@ -257,7 +269,7 @@
                                 <!-- card 2 -->
                                 <div class="card mr-2 d-inline-block shadow-lg">
                                     <div class="card-img-top">
-                                        <img src="./images/UI-face-1.jpg" alt="Member"
+                                        <img src="../images/UI-face-1.jpg" alt="Member"
                                             class="img-fluid rounded-circle w-50 p-4">
                                     </div>
                                     <div class="card-body">
@@ -277,7 +289,7 @@
                                 <!-- card 3 -->
                                 <div class="card mr-2 d-inline-block shadow-lg">
                                     <div class="card-img-top">
-                                        <img src="./images/UI-face-2.jpg" alt="Member"
+                                        <img src="../images/UI-face-2.jpg" alt="Member"
                                             class="img-fluid rounded-circle w-50 p-4">
                                     </div>
                                     <div class="card-body">
@@ -299,7 +311,7 @@
                     <!-- card 4 -->
                     <div class="card mr-2 d-inline-block shadow-lg">
                         <div class="card-img-top">
-                            <img src="./images/UI-face-4.jpg" alt="Member" class="img-fluid border-radius p-4">
+                            <img src="../images/UI-face-4.jpg" alt="Member" class="img-fluid border-radius p-4">
                         </div>
                         <div class="card-body">
                             <h3 class="card-tittle">Olivia Louis</h3>
@@ -372,11 +384,17 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
+    <script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+    <script src="js/jquery.color.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+
     <!-- start counter -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <script src="js/jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <!-- end counter -->
-    <script src=".//js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
