@@ -23,7 +23,7 @@ $('#world-population').animateNumber({
   number: 2345,
 }, {
   easing: 'swing',
-  duration: 7000,
+  duration: 6000,
 
 });
 
@@ -32,7 +32,7 @@ $('#world-1').animateNumber({
   number: 6784,
 }, {
   easing: 'swing',
-  duration: 7000,
+  duration: 6000,
 
 });
 
@@ -41,7 +41,7 @@ $('#world-2').animateNumber({
   number: 1056,
 }, {
   easing: 'swing',
-  duration: 7000,
+  duration: 6000,
 
 });
 
@@ -50,13 +50,16 @@ $('#world-3').animateNumber({
   number: 9152,
 }, {
   easing: 'swing',
-  duration: 7000,
+  duration: 6000,
 
 });
 
-
-// loading//
-setTimeout(function () {
-  $('.preload').fadeToggle();
-
-}, 1500)
+// loader
+var loader = function () {
+  setTimeout(function () {
+    if ($('#ftco-loader').length > 0) {
+      $('#ftco-loader').removeClass('show');
+    }
+  }, 1500);
+};
+loader();
