@@ -23,7 +23,7 @@ $('#world-population').animateNumber({
   number: 2345,
 }, {
   easing: 'swing',
-  duration: 6000,
+  duration: 7000,
 
 });
 
@@ -32,7 +32,7 @@ $('#world-1').animateNumber({
   number: 6784,
 }, {
   easing: 'swing',
-  duration: 6000,
+  duration: 7000,
 
 });
 
@@ -41,7 +41,7 @@ $('#world-2').animateNumber({
   number: 1056,
 }, {
   easing: 'swing',
-  duration: 6000,
+  duration: 7000,
 
 });
 
@@ -50,7 +50,7 @@ $('#world-3').animateNumber({
   number: 9152,
 }, {
   easing: 'swing',
-  duration: 6000,
+  duration: 7000,
 
 });
 
